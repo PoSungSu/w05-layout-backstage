@@ -1,0 +1,20 @@
+.nav {
+    /* 用 position: fixed; 可以固定住側欄 */
+    position: fixed;
+    min-width: 296px;
+    min-height: 100vh;
+    // --bs-nav-link-color: #212529;       //改掉原藍色。
+    // --bs-nav-link-hover-color: #212529;
+    &-link {
+        padding: 12px 32px;
+        position: relative;     //相對位置
+    }
+    &-link.active::before {
+        content: "";
+        position: absolute;
+        left: 0;                //在position設定為absolute時可以設定的屬性lift, right...
+        width: 4px;
+        height: 32px;
+        border: 4px solid $success;
+    }
+}

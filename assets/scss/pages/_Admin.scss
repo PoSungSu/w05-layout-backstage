@@ -1,0 +1,38 @@
+.addModal, .visModal, .editModal {
+    &:hover {
+        color: $success;
+    }
+}
+.page {
+    a {
+        background-color: cadetblue;
+    }
+    &-link {        
+        width: 32px;
+        height: 32px;
+        color: $dark;
+        padding: 4px;
+        border: 1px solid $success;
+        text-align: center;
+        .material-symbols-outlined {
+            color: $success;
+            &:hover {
+                color: white;
+            }
+        }
+        &:hover {
+            color:white;
+            background-color: $success;
+        }
+        
+    }
+}
+
+.form-check:hover {
+    background-color: $gray-400;
+}
+
+.vis-img {
+    width: 141px;
+    height: 141px;
+}

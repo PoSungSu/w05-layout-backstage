@@ -1,0 +1,16 @@
+.font {
+    &-lato {
+        font-family: 'Lato', sans-serif;
+    }
+    &-mono {
+        font-family: 'Roboto Mono', monospace;
+    }
+}
+
+$font-lato: 'Lato', sans-serif;
+$font-mono: 'Roboto Mono', monospace;
+
+$font-families: (
+    primary: $font-lato,
+    secondary:  $font-mono
+);

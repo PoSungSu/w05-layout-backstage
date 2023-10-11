@@ -1,5 +1,19 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "../node_modules/bootstrap/scss/functions";
+@import './helpers/variables';                              //自定議變數
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import './base/fontstyle';
+@import './base/variables';
+@import './base/base';
+
+//components
+@import './components/container';
+@import './components/avatar';
+
+//layout
+@import './layout/nav';
 
 
-@import './pages/index.scss';
+@import './pages/index';
+@import './pages/Admin';
