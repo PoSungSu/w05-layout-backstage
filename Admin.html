@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout-bkacstage</title>
+    <script type="module" crossorigin src="/w05-layout-backstage/assets/main-0b3e8288.js"></script>
+    <link rel="stylesheet" href="/w05-layout-backstage/assets/main-2ad6afdf.css">
+  </head>
+  <body>
+    <nav class="nav bg-light flex-column pt-10 pb-8">
+    <a class="nav-link a mb-8" href="./header.ejs" aria-current=""><img src="/w05-layout-backstage/assets/logo-ANSWER-5336fb45.svg" alt="ANSWER"></a>
+    <ul class="navbar-nav gap-6 fw-bold">
+        <li class="nav-item">
+            <a class="nav-link ms-4 disabled" href="#">
+                <span class="material-symbols-outlined align-middle me-4">insert_chart</span>
+                Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ms-4 disabled" href="#">
+                <span class="material-symbols-outlined  align-middle me-4">forum</span>
+                Question
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link link-success active ms-4" aria-current="page" href="../pages/index.html">
+                <span class="material-symbols-outlined align-middle me-4">assignment</span>
+                Assignment
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ms-4 disabled" href="#">
+                <span class="material-symbols-outlined align-middle me-4">video_library</span>
+                Course
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ms-4" href="../pages/Admin.html">
+                <span class="material-symbols-outlined align-middle me-4">group</span>
+                Admin
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link ms-4 disabled" href="../pages/settings.html">
+                <span class="material-symbols-outlined align-middle me-4">Settings</span>
+                Settings
+            </a>
+        </li>
+    </ul>
+    <div class="user d-flex gap-4 mt-auto ms-8">
+        <img class="avatar" src="/w05-layout-backstage/assets/andychen-f14fef59.jpeg" alt="andychen">
+        <div>
+            <p class="user-name fw-bold">Andy Chen</p>
+            <p class="user-email text-secondary fs-sm">andy0401@gmail.com</p>
+        </div>
+    </div>
+
+</nav>
+
+animate__slideInUp
+    <main class="main">
+      <div class="container-sm">
+        <div class="row">
+          <div class="d-flex justify-content-between align-items-center px-5">
+            <div class="d-flex align-items-center fw-bold">
+              <p class="fw-bold fs-6 me-12">Admin</p>
+              <a class="addModal d-flex gap-2" href="#addModal" data-bs-toggle="modal">
+                <span class="material-symbols-outlined text-success">add</span>Add New Admin
+              </a>
+            </div>
+            <div>
+              <span class="material-symbols-outlined me-6">search</span>
+              <span class="material-symbols-outlined">notifications_active</span>
+            </div>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <a href="#" class="d-flex gap-1">ID
+                      <span class="material-symbols-outlined text-success">arrow_downward</span>
+                    </a>
+                  </th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Verified</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#1</td>
+                  <td>Emir Wicks</td>
+                  <td>emir.wicks@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#2</td>
+                  <td>Zaina Goldsmith</td>
+                  <td>zaina.goldsmith@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#3</td>
+                  <td>Mahima Lopez</td>
+                  <td>mahima.lopez@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#4</td>
+                  <td>Pharrell Murray</td>
+                  <td>pharrell.murray@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#5</td>
+                  <td>Annika Mcbride</td>
+                  <td>annika.mcbride@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#6</td>
+                  <td>Fatimah Clark</td>
+                  <td>fatimah.clark@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#7</td>
+                  <td>Klaudia Rhodes</td>
+                  <td>klaudia.rhodes@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#8</td>
+                  <td>Tillie Lucero</td>
+                  <td>tillie.lucero@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#9</td>
+                  <td>Sabrina Stephenson</td>
+                  <td>sabrina.stephenson@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>#10</td>
+                  <td>Annie Smith</td>
+                  <td>annie.smith@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end gap-6">
+                    <a href="#visModal" class="visModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">visibility</span>
+                    </a>
+                    <a href="#editModal" class="editModal" data-bs-toggle="modal">
+                      <span class="material-symbols-outlined">edit</span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav aria-label="page navigation" class="">
+            <ul class="pagination justify-content-end align-content-stretch">
+              <li class="page-item">
+                <a class="page-link d-flex" href="" aria-label="Previous">
+                  <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+                </a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#one" id="one">1</a></li>
+              <li class="page-item"><a class="page-link" href="#two" id="two">2</a></li>
+              <li class="page-item"><a class="page-link" href="#three" id="three">3</a></li>
+              <li class="page-item">
+                <a class="page-link d-flex" href="" aria-label="Next">
+                  <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- addModal -->
+      <div class="modal fade" id="addModal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content pt-4 px-4">
+            <div class="modal-header border-0">
+              <p class="modal-title fw-bold fs-6" id="addModalLabel">New Admin</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>            
+            <div class="modal-body">
+              <form action="">
+                <div class="border-bottom border-1 pb-6">
+                  <h5 class="fw-bold">Account</h5>
+                  <label for="name" class="fs-sm form-label mb-1">Name</label>
+                  <input type="text" class="form-control border-dark" name="name" id="name" required placeholder="請輸入姓名">
+                  <label for="email" class="fs-sm form-label mb-1">Email</label>
+                  <input type="email" class="form-control border-dark" name="email" id="email" pattern="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="請輸入mail">
+                </div>
+                <div class="border-bottom border-1 py-6 fw-bold">
+                  <h5 class="mb-5 fw-bold">Verification</h5>                  
+                  <p class="mb-4">
+                    <span class="material-symbols-outlined text-danger me-2">report_problem</span>
+                    Unverified
+                  </p>
+                  <button type="button" class="btn btn-outline-secondary text-success fw-bold w-100">Send Verification Mail</button>
+                </div>
+                <div class="border-bottom border-1 py-6">
+                  <label for="browser" class="form-label fs-5 fw-bold mb-4">Access Level</label>
+                  <select name="" id="" class="form-select" aria-label="Default select">
+                    <option selected disabled>-Choose access level-</option>
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                    <option value="PowerUser">PowerUser</option>
+                  </select>
+                </div>
+                <div class="mt-6 mb-4">
+                  <h5 class="fw-bold mb-4">Custom Access</h5>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="addLecture">
+                    <label class="form-check-label d-block" for="addLecture">Lecture</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input " value="" id="addCoupon">
+                    <label class="form-check-label d-block" for="addCoupon">Coupon</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="addMessage">
+                    <label class="form-check-label d-block" for="addMessage">Message</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="addSetting">
+                    <label class="form-check-label d-block" for="addSetting">Setting</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="addMenu">
+                    <label class="form-check-label d-block" for="addMenu">Task Menu</label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-success px-8 py-2 me-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-success px-8 py-2">Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- visModal -->
+      <div class="modal fade" id="visModal" tabindex="-1" aria-labelledby="visModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-8">
+            <div class="d-flex gap-6">
+              <img class="vis-img rounded-2" src="/w05-layout-backstage/assets/emir-3d7a4b39.jpeg" alt="emir">
+              <div class="flex-fill">
+                <div class="modal-header border-0 p-0 mb-2">
+                  <h6 class="modal-title" id="visModalLabel">#1</h6>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                  <p>Admin</p>
+                  <h4 class="fw-bold">Emir Wicks</h4>
+                  <p class="fs-sm text-secondary mb-4">emir.wicks@mail.com</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fs-sm py-1 px-2 bg-light rounded-2">Verified</span>
+                    <a class="" data-bs-toggle="collapse" href="#collapse" role="" aria-expanded="false" aria-controls="collapse">
+                      <span class="material-symbols-outlined text-success" >expand_more</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-0 p-0">
+              <div class="collapse" id="collapse">
+                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal" >Deactivate</button>
+                <button type="button" class="btn btn-success" data-bs-target="#editModal" data-bs-toggle="modal">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- editModal -->
+      <div class="modal fade" id="editModal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content pt-4 px-4">
+            <div class="modal-header border-0">
+              <p class="modal-title fw-bold fs-6" id="editModalLabel">Edit Admin</p>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>            
+            <div class="modal-body">
+              <form action="">
+                <div class="border-bottom border-1 pb-6">
+                  <h5 class="fw-bold">Account</h5>
+                  <label for="name" class="fs-sm form-label mb-1">Name</label>
+                  <input type="text" class="form-control border-dark" name="name" id="name" required placeholder="請輸入姓名" value="Emir Wicks">
+                  <label for="email" class="fs-sm form-label mb-1">Email</label>
+                  <input type="email" class="form-control border-dark" name="email" id="email" pattern="" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="請輸入mail" value="emir.wicks@mail.com">
+                </div>
+                <div class="border-bottom border-1 py-6">
+                  <h5 class="mb-5 fw-bold">Verification</h5>
+                  <div class="d-flex justify-content-between mb-4">
+                    <p class="d-flex gap-2 fw-bold">
+                      <span class="material-symbols-outlined text-success">check_circle</span>
+                      Verified
+                    </p>
+                    <p class="fs-sm">2020/4/12</p>
+                  </div>
+                  <button type="button" class="btn btn-outline-secondary fw-bold w-100" disabled>Send Verification Mail</button>
+                </div>
+                <!-- form-select -->
+                <div class="border-bottom border-1 py-6">
+                  <label for="browser" class="form-label fs-5 fw-bold mb-4">Access Level</label>
+                  <select name="" id="" class="form-select" aria-label="Default select">
+                    <option disabled>-Choose access level-</option>
+                    <option value="Admin" selected>Admin</option>
+                    <option value="User">User</option>
+                    <option value="PowerUser">PowerUser</option>
+                  </select>
+                </div>
+                <!-- form-check -->
+                <div class="border-bottom border-1 py-6">
+                  <h5 class="fw-bold mb-4">Custom Access</h5>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="editLecture">
+                    <label class="form-check-label d-block" for="editLecture">Lecture</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input " value="" id="editCoupon">
+                    <label class="form-check-label d-block" for="editCoupon">Coupon</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="editMessage">
+                    <label class="form-check-label d-block" for="editMessage">Message</label>
+                  </div>
+                  <div class="form-check mb-4">
+                    <input type="checkbox" class="form-check-input" value="" id="editSetting">
+                    <label class="form-check-label d-block" for="editSetting">Setting</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" value="" id="editMenu">
+                    <label class="form-check-label d-block" for="editMenu">Task Menu</label>
+                  </div>
+                </div>
+                <!-- Deactivate -->
+                <div class="mt-6">
+                  <p class="fs-5 fw-bold">Deactivate Account</p>
+                  <div class="my-4">
+                    <span class="material-symbols-outlined text-danger me-2">warning</span>
+                    <span class="text-danger">This cannot be undone!</span>
+                  </div>
+                  <button type="button" class="fw-bold d-block w-100 btn btn-outline-danger py-4">This cannot be undone!</button>
+                </div>  
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-success px-8 py-2 me-4" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-success px-8 py-2">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    
+  </body>
+</html>
