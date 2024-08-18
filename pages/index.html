@@ -1,57 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+<body>
+<%- include('./layout/aside'); -%>
+<div class="ms-74">
+  <div class="container-fluid px-8">
+    <%- include('./layout/assign-header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <main>
+      <div class="row g-4">
+        <div class="col-4">
+          <div class="d-flex flex-column">
+            <div class="dropdown" style="height: 28px;">
+              <button class="btn p-0 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  All(4)
+                  <span class="material-symbols-outlined text-success align-middle ms-2">keyboard_arrow_down</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+                <li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+                <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+              </ul>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action p-3 active" aria-current="true">
+                <div class="d-flex flex-column gap-1">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="fs-3">Chapter Assignment 2</h5>
+                    <span class="fs-3 lh-lg">4 hrs ago</span>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="text-truncate" style="max-width: 200px;">Please check this file for me, thanks!</p>
+                    <span class="fs-3 lh-lg">Emily Wang</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                <div class="d-flex flex-column gap-1">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="fs-3">Chapter Assignment 1</h5>
+                    <span class="fs-3 lh-lg">12 hrs ago</span>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="text-truncate" style="max-width: 200px;">Please check this file for me, thanks!</p>
+                    <span class="fs-3 lh-lg">David Xu</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                <div class="d-flex flex-column gap-1">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="fs-3">Final Assignment</h5>
+                    <span class="fs-3 lh-lg">18 hrs ago</span>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="text-truncate" style="max-width: 200px;">Please check this file for me, thanks!</p>
+                    <span class="fs-3 lh-lg">Tony Wei</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action p-3" aria-current="true">
+                <div class="d-flex flex-column gap-1">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="fs-3">Final Assignment</h5>
+                    <span class="fs-3 lh-lg">19 hrs ago</span>
+                  </div>
+                  <div class="d-flex w-100 justify-content-between">
+                    <p class="text-truncate" style="max-width: 200px;">Please check this file for me, thanks!</p>
+                    <span class="fs-3 lh-lg">Christina Lin</span>
+                  </div>
+                </div>
+              </a>
+  
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+        </div>
+
+        <div class="col-8">
+          <p class="text-end text-secondary fs-3 lh-lg" style="height: 28px;">2 comments</p>
+
+          <div class="card mb-4">
+            <div class="card-header">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="">
+                  <p class="fs-3 lh-lg">Chapter Assignment 2 / HTML&CSS</p>
+                  <p class="">Please check this file for me, thanks!</p>
+                </div>
+                <span class="material-symbols-outlined">more_vert</span>
+              </div>
+            </div>
+            <div class="card-body pe-8 pb-11">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item position-relative pb-4 ms-12 mb-4">
+                  <div class="d-flex flex-column gap-4">
+                    <div class="">
+                      <img class="img-fluid rounded-circle object-fit-cover position-absolute" style="width:40px; height: 40px; left: -48px;"  src="../assets/images/emilywang.jpeg" alt="Emily Wang">
+                      <p class="fw-bold">Emily Wang</p>
+                      <p class="text-secondary fs-3">10:38 AM (4 hours ago)</p>
+                    </div>
+                    <small class="">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.<br> What is the gap or extra space below image?
+                    </small>
+                    <div class="">
+                      <a href="#" class="btn border bg-light fw-bold py-2" download="HW-2-David.zip">
+                        <span class="material-symbols-outlined align-middle">attach_file</span>
+                        HW-2-David.zip
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item position-relative pb-4 ms-12">
+                  <div class="d-flex flex-column gap-4">
+                    <div class="d-flex justify-content-between">
+                      <img class="img-fluid rounded-circle object-fit-cover position-absolute" style="width:40px; height: 40px; left: -48px;"  src="../assets/images/andychen.jpeg" alt="Emily Wang">
+                      <div>
+                        <p class="fw-bold">Andy Chen (You)</p>
+                        <p class="text-secondary fs-3">13:24 AM (1 hours ago)</p>
+                      </div>
+                      <div class="d-flex gap-6">
+                        <a href="#" class="">
+                          <span class="material-symbols-outlined">star</span>
+                        </a>
+                        <a href="#">
+                          <span class="material-symbols-outlined">edit</span>
+                        </a>
+                      </div>
+                    </div>
+                    <small class="">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                      <br>You can:<br>
+                       　• adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 
+                       <br>　• change the <mark>display</mark> so it isn’t inline.
+                    </small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center position-relative">
+            <div class="d-flex gap-4">
+              <a href="#">
+                <span class="material-symbols-outlined me-6">chevron_left</span>
+              </a>
+              <a href="#">
+                <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </div>
+
+            <div class="d-flex gap-4">
+              <a class="btn btn-outline-success fw-bold" href="#" role="button">Mark as read</a>
+              <a class="btn btn-success fw-bold py-2 px-8" data-bs-toggle="collapse" href="#collapseExample" role="button">Reply</a>
+            </div>
+
+            <div class="collapse position-absolute w-100" id="collapseExample">
+              <div class="card">
+                <div class="card-header">
+
+                </div>
+                <div class="card-body">
+                  <div class="d-flex gap-4">
+                    <a class="btn btn-outline-success fw-bold" data-bs-toggle="collapse" href="#collapseExample" role="button" href="#">Cancel</a>
+                    <a class="btn btn-success fw-bold py-2 px-8" data-bs-toggle="collapse" href="#collapseExample" role="button">Reply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <%- include('./layout/footer'); -%>
+    </main>
+  </div>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+
+
+</div>
+
+
+
+  
+  <!-- <%- include('./layout/footer'); -%> -->
+
+  <script type="module" src="../main.js"></script>
+</body>
 </html>

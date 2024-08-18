@@ -1,0 +1,8 @@
+.dropdown {
+    .btn:hover, .btn.show {
+        color: $dark;
+        background-color: white;
+        opacity: .7;
+        // border: 1px, solid, $dark !important;
+    }
+}
